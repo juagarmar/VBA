@@ -1,0 +1,2 @@
+ThisWorkbook.RefreshAll
+Application.CalculateUntilAsyncQueriesDone
