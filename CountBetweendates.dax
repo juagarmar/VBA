@@ -1,0 +1,9 @@
+Measure = 
+CALCULATE (
+    SUM ( ValueTable[Value] ),
+    FILTER (
+        ValueTable,
+        ValueTable[Date] >= MIN( PeriodTable[StartDate] )
+            && ValueTable[Date] <= MAX ( PeriodTable[EndDate] )
+    )
+)
